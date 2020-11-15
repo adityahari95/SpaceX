@@ -1,0 +1,159 @@
+    .launch-head{
+        background-color: rgb(212, 208, 208);
+        font-size: large;
+        color:blue;        
+    }
+    .title-launch{
+        font-size: medium;  
+        margin-bottom: auto; 
+        color:blue;    
+}
+    .title-land{
+        font-size: medium;        
+        margin-bottom: auto;
+        color:blue;
+    }   
+
+    .filter-col{
+        float:left;
+        width: 20%;  
+        font-size: small;        
+    }    
+
+    .filter-row1{
+        color:blue;
+        text-align: center;
+        font-size: large;
+    }
+
+    .filter-row2{
+        
+        font-size: medium;  
+        margin-bottom: auto;   
+        color:blue;  
+    }
+
+    .filter-row4{ 
+
+        font-size: small;
+        
+    }
+
+    .filter-launch{
+        clear:both;
+        font-size: small;
+    }
+
+    .filter-land{
+        clear:both;
+    }
+
+   /* Launch Detail Design  */
+    .details-row1 {
+
+    display: grid;
+    float:left;
+    width: auto;
+    grid-template-columns: 180px 30px 6px 6px;
+    margin-left: 20px;
+    padding: 2px 0;
+    align-content:center;
+        
+    }
+
+    /* Launch Detail Design  */
+    .details-row2 {
+    width: 160px;
+    height: 330px;
+    margin: 16px;
+    align-content:center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 12px rgb(100, 95, 95);
+    clear:both;
+    
+    }
+
+      
+      .btn-1{        
+        float:left;
+        background-color: #acf8af;
+         margin-right:30px; 
+         margin-bottom:10px;
+         text-align: center;
+         padding: 8px 16px;
+         border-radius: 8px;
+         border:olive;
+        }
+        .btn-1:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+
+        .btn-2{
+            float:left;
+            background-color: #acf8af;
+             margin-right:30px; 
+             margin-bottom:10px;
+             text-align: center;
+             padding: 8px 16px;
+             border-radius: 8px;
+             border:olive;
+         }
+         .btn-2:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+
+         .btn-3{
+            float:left;
+        background-color: #acf8af;
+         margin-right:30px; 
+         margin-bottom:10px;
+         text-align: center;
+         border-radius: 8px;
+         padding: 8px 16px;
+         border:olive;
+         }
+         .btn-3:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+        
+         .btn-4{
+            float:left;
+        background-color: #acf8af;
+         margin-right:30px; 
+         margin-bottom:10px;
+         text-align: center;
+         border-radius: 8px;
+         padding: 8px 16px;
+         border:olive;
+
+         }
+         .btn-4:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+
+         .btn-5{
+            float:left;
+            background-color: #acf8af;
+             margin-right:30px; 
+             margin-bottom:10px;
+             text-align: center;
+             padding: 8px 16px;
+             border-radius: 8px;
+             border:olive;
+         } 
+         .btn-5:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+   
+      .sign{
+          clear: both;
+        text-align: center;
+        color:blue;
+      }
+      

@@ -1,0 +1,83 @@
+<!-- Heading -->
+<div class="launch-head">
+<h3><b>SpaceX Launch Programs</b></h3>
+</div>
+
+<!-- Showing Filter Column Buttons -->
+<div class="filter-col">
+<h4 class="filter-row1">Filters</h4> 
+
+<h4 class="filter-row2">Launch Year</h4>
+<hr>
+
+<div *ngFor="let year of launchYear">
+  <button class="btn-1" (click)="filterYear($event.target.outerText)" title="{{year}}">{{year}}</button>
+</div> 
+
+<div class="filter-launch">
+  <div>
+    <b>
+      <h4 class="title-launch">Successful Launch</h4>
+    </b>    
+    <hr>
+  </div>
+
+  <div>
+    <button class="btn-2" title="True" (click)="filterLaunch('true')">True</button>
+    <button class="btn-3" title="False" (click)="filterLaunch('false')">False</button>
+  </div>
+  
+</div>
+  
+
+<div class="filter-land">
+  <div>
+    <b>
+      <h4 class="title-land">Successful Landing</h4>
+    </b>  
+    <hr>
+  </div>
+
+  <div>
+    <button class="btn-4" title="True" (click)="filterLand('true')">True</button>
+    <button class="btn-5" title="False" (click)="filterLand('false')">False</button>
+  </div>  
+
+</div> 
+
+</div>
+
+
+<!-- SHowing Launch Details -->
+<div *ngFor="let launch of allDetails">
+  
+  <div class="details-row1"> 
+        
+        <div class="details-row2">
+          <img 
+          src="https://media.npr.org/assets/img/2020/03/07/spacex-march-6-4bb0dbc7fc37c565a41038ee76763e320beaebdd-s800-c85.jpg"
+            width="160px" height="160px" style="align-items: center;box-shadow: 0 0 12px rgb(100, 95, 95);">
+
+          <h4 style="color: blue;">{{launch.mission_name}}#{{launch.flight_number}}</h4>
+          <p>
+            <b>Mission Ids:</b>{{launch.mission_id}}
+          </p>
+          <p>
+            <b>Launch Year:</b> {{launch.launch_year}}
+          </p>
+          <p>
+            <b>Successful Launch:</b> {{launch.launch_success}}
+          </p>
+          <p>
+            <b>Successful Landing:</b> {{launch.rocket.first_stage.cores[0].land_success}}
+          </p>
+
+        </div>        
+  </div>      
+</div>
+
+<div>
+<footer>
+  <h4 class="sign"> Developed By: Aditya Jha </h4>
+</footer>
+</div>
